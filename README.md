@@ -1,4 +1,3 @@
-# JurassicPreserve
 ## How to run the game
 * Download Java at https://www.java.com/en/download/manual.jsp
 * Download JurassicPreserve.jar 
