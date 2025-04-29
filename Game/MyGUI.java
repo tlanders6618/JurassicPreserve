@@ -85,8 +85,7 @@ public class MyGUI extends JPanel {
 		
 		this.setLayout(new BorderLayout());
 		
-		//String javaVersion = System.getProperty("java.version");
-        //System.out.println("(Macomb escape) Java Version: " + javaVersion);
+        //System.out.println("Java version: "+System.getProperty("java.version"));
 		
 		//editorpane displays all the game's text
 		editor=new JEditorPane();
@@ -2230,7 +2229,7 @@ public class MyGUI extends JPanel {
 		string.append("works; the pterosaur is unable to get a clear line of attack to you. Unlike a bull, it learns quickly, ");
 		string.append("and decides you aren’t worth the trouble. It gives you a look that could almost be described as ");
 		string.append("angry, then flies off to another part of the island, looking for easier prey.");
-
+		
 		Story hide=new Story("Hide", string.toString());
 		story.addEdge(pteroAttack, hide, RandInt(false));
 		story.addEdge(hint, hide, RandInt(true));
@@ -2522,8 +2521,8 @@ public class MyGUI extends JPanel {
 		string.append("you. “I have to admit, kid, I’m impressed. Not many people could handle that like you did.”<br><br>");
 		string.append("“Thanks,” you say, finding a tree to lean on while waiting for your heart to stop trying to leap out ");
 		string.append("of your chest. “Honestly, I wasn’t sure if that would work either.”<br><br>");
-		string.append("“I’m glad Terry’s still alive,” Alex says softly. “He was my second favourite.”<br><br>");
-		string.append("Muldrew speaks softly. “Alex, I told you this before. They’re wild animals, not your friends. ");
+		string.append("“I’m glad <a href=\"dearc.html\">Terry</a> is still alive,” Alex says softly. “He was my second favourite.”");
+		string.append("<br><br>Muldrew speaks softly. “Alex, I told you this before. They’re wild animals, not your friends. ");
 		string.append("They do what they’re made to do, nothing more.”<br><br>");
 		string.append("Alex doesn’t respond, just holds onto Muldrew’s hand, looking dejected and almost betrayed by ");
 		string.append("Terry’s attack on you.<br><br>");
@@ -2642,9 +2641,9 @@ public class MyGUI extends JPanel {
 		string.delete(0, string.length());
 		string.append("You practically deflate from relief, and for the first time since you’ve met him, you hear Muldrew laugh. ");
 		string.append("You turn around and find him literally wheezing from laughter; Alex is also giggling uncontrollably.");
-		string.append("<br><br>You would ask what’s so funny, but considering that you just threatened a dinosaur with a prison ");
-		string.append("sentence for trying to eat you, you can’t blame them. Their laughter is infectious, and you can’t ");
-		string.append("help but join in.<br><br>");
+		string.append("<br><br>You would ask what’s so funny, but considering that you just threatened a <a href=\"dilo.html\">dinosaur</a> ");
+		string.append("with a prison sentence for trying to eat you, you can’t blame them. Their laughter is infectious, ");
+		string.append("and you can't help but join in.<br><br>");
 		string.append("It takes a few minutes for you all to calm down, and when you do, Muldrew has to wipe tears ");
 		string.append("from his eyes. “I thought you were a prosecutor,” he says to you.<br><br>");
 		string.append("“I am,” you respond with a smile. “But I know a few defence attorneys.”<br><br>");
@@ -2682,7 +2681,7 @@ public class MyGUI extends JPanel {
 		string.append("this,” Alex remarks, with clear admiration over the fact that you’ve now warded off two different dinosaurs.");
 		string.append("<br><br>“It works on most wild animals,” you explain. “Make yourself look bigger and talk to let them ");
 		string.append("know you aren’t their usual easy prey. The flashlight was impulsive, but I didn’t know if the ");
-		string.append("usual methods would be enough with a dinosaur.”<br><br>");
+		string.append("usual methods would be enough with a <a href=\"dilo.html\">dinosaur</a>.”<br><br>");
 		string.append("“Of course, I should’ve thought of that,” Muldrew groans, sounding annoyed at himself. “I’m a ");
 		string.append("zookeeper.” He mutters “I can barely think straight with all these dinosaurs running loose.”<br><br>");
 		string.append("Alex giggles at Muldrew, then asks you “How do you know how to fight wild animals?”<br><br>");
@@ -2921,8 +2920,8 @@ public class MyGUI extends JPanel {
 		
 		string.delete(0, string.length());
 		string.append("You practically deflate from relief, and you hear Alex start to giggle uncontrollably.<br><br>");
-		string.append("You would ask what’s so funny, but considering that you just threatened a dinosaur with a prison ");
-		string.append("sentence for trying to eat you, you can’t blame him. His laughter is infectious, and you can’t ");
+		string.append("You would ask what’s so funny, but considering that you just threatened a <a href=\"dilo.html\">dinosaur</a> ");
+		string.append("with a prison sentence for trying to eat you, you can’t blame him. His laughter is infectious, and you can’t ");
 		string.append("help but join in.<br><br>");
 		string.append("It takes a few minutes for you two to calm down, and when you do, Alex asks you ");
 		string.append("“How'd you do that?”<br><br>");
@@ -2961,7 +2960,7 @@ public class MyGUI extends JPanel {
 		string.append("would work?” Alex asks.<br><br>");
 		string.append("“It works on most wild animals,” you explain. “Make yourself look bigger and talk to let them ");
 		string.append("know you aren’t their usual easy prey. The flashlight was impulsive, but I didn’t know if the ");
-		string.append("usual methods would be enough with a dinosaur.”<br><br>");
+		string.append("usual methods would be enough with a <a href=\"dilo.html\">dinosaur</a>.”<br><br>");
 		string.append("Alex asks you “How do you know how to fight wild animals?”<br><br>");
 		string.append("“I saw a public service announcement as a kid. ‘Grizzley the Bear says it’s up to you to stay safe ");
 		string.append("when hiking,’” you answer, recalling the way the hat wearing bear would intermittently appear ");
@@ -3093,11 +3092,11 @@ public class MyGUI extends JPanel {
 	{
 		StringBuilder string=new StringBuilder(600); 
 		string.append("Macomb slumps to the ground, a hand in his hair. “I don’t know what’s crazier, the fact that a ");
-		string.append("pterosaur tried to eat us, or the fact that we survived it.”<br><br>");
+		string.append("<a href=\"dearc.html\">pterosaur</a> tried to eat us, or the fact that we survived it.”<br><br>");
 		string.append("You find a tree to lean against while waiting for your heart to stop trying to leap out of your ");
 		string.append("chest. “Actually, it looked like it was just after me,” you note.<br><br>");
 		string.append("“Heh, probably because Muldrew trained the dinosaurs to leave the rest of us alone. Or tried to, ");
-		string.append("anyway,” Macomb says.<br><br>");
+		string.append("anyway,” Macomb says.<br><br>"); 
 		string.append("“What do you mean ‘tried to’?” you ask him.<br><br>");
 		string.append("He looks at you, sounding more serious. “I mean dinosaurs are crazy. They’ve never seen ");
 		string.append("humans before, so they barely even tolerate Muldrew. He doesn’t really train them ");
@@ -3220,9 +3219,9 @@ public class MyGUI extends JPanel {
 		string.delete(0, string.length());
 		string.append("You practically deflate from relief, and Macomb suddenly uncontrollably bursts into laughter, a ");
 		string.append("mixture of relief and disbelief.<br><br>");
-		string.append("You would ask what’s so funny, but considering that you just threatened a dinosaur with a prison ");
-		string.append("sentence for trying to eat you, you can’t blame him. His laughter is infectious, and you can’t help ");
-		string.append("but join in.<br><br>");
+		string.append("You would ask what’s so funny, but considering that you just threatened a <a href=\"dilo.html\">dinosaur</a> ");
+		string.append("with a prison sentence for trying to eat you, you can’t blame him. His laughter is infectious, ");
+		string.append("and you can't help but join in.<br><br>");
 		string.append("It takes a few minutes for you two to calm down, and when you do, Macomb has to wipe tears ");
 		string.append("from his eyes. “I thought you were a prosecutor,” he says to you.<br><br>");
 		string.append("“I am,” you respond with a smile. “But I know a few defence attorneys.”<br><br>");
@@ -3262,7 +3261,7 @@ public class MyGUI extends JPanel {
 		string.append("dinosaurs.<br><br>");
 		string.append("“It works on most wild animals,” you explain. “Make yourself look bigger and talk to let them ");
 		string.append("know you aren’t their usual easy prey. The flashlight was impulsive, but I didn’t know if the ");
-		string.append("usual methods would be enough with a dinosaur.”<br><br>");
+		string.append("usual methods would be enough with a <a href=\"dilo.html\">dinosaur</a>.”<br><br>");
 		string.append("Macomb raises his eyebrow and asks you “And how do you know how to fight wild animals?”<br><br>");
 		string.append("“I saw a public service announcement as a kid. ‘Grizzley the Bear says it’s up to you to stay safe ");
 		string.append("when hiking,’” you answer, recalling the way the hat wearing bear would intermittently appear ");
@@ -3445,8 +3444,8 @@ public class MyGUI extends JPanel {
 		string.delete(0, string.length());
 		string.append("You practically deflate from relief, and can't help but uncontrollably burst into laughter, a ");
 		string.append("mixture of relief and disbelief.<br><br>");
-		string.append("You just threatened a dinosaur with a prison sentence for trying to eat you. And somehow that ");
-		string.append("made it back off. You know that if Macomb was here, he would’ve found it just as funny as you do.<br><br>");
+		string.append("You just threatened a <a href=\"dilo.html\">dinosaur</a> with a prison sentence for trying to eat you. And ");
+		string.append("somehow it worked. You know that if Macomb was here, he would’ve found it just as funny as you do.<br><br>");
 		string.append("It takes a few minutes for you to calm down, and when you do, you have to wipe tears from your eyes.");
 		string.append("<br><br>Even though you’re a prosecutor, you know a few defence attorneys, and picked up a thing or ");
 		string.append("two from them. Unfortunately, they’ll never be able to know just how much they helped you, ");
@@ -3490,8 +3489,8 @@ public class MyGUI extends JPanel {
 		string.append("those Grizzley the Bear public service announcements as a kid. He taught you that when faced ");
 		string.append("with a wild animal, you should try to make yourself look bigger, and talk to let them know you ");
 		string.append("aren’t their usual easy prey. The flashlight wasn’t part of the announcements, but you figured ");
-		string.append("something extra wouldn’t hurt given that dinosaurs aren’t like most wild animals.<br><br>");
-		string.append("With the dinosaur now gone, you can finally walk over to the substation’s door.");
+		string.append("something extra wouldn’t hurt given that <a href=\"dilo.html\">dinosaurs</a> aren’t like most wild animals.");
+		string.append("<br><br>With the dinosaur now gone, you can finally walk over to the substation’s door.");
 
 		Story scare=new Story("Try to scare it off", string.toString());
 		story.addEdge(encounter, scare, RandInt(false));
@@ -4392,8 +4391,8 @@ public class MyGUI extends JPanel {
 		story.addEdge(sprint, cry, 2);
 		
 		string.delete(0, string.length());
-		string.append("The dinosaur that’d been chasing you, an allosaurus, charges at the stegosaurus, and the ");
-		string.append("stegosaurus reacts in an instant. It turns to the side and lashes out with its thagomizer, its spiked ");
+		string.append("The dinosaur that’d been chasing you, an <a href=\"allo.html\">allosaurus</a>, charges at the stegosaurus, ");
+		string.append("and the stegosaurus reacts in an instant. It turns to the side and lashes out with its thagomizer, its spiked ");
 		string.append("tail, which moves almost in a blur. You’re glad you’ve taken cover behind the tower, because the ");
 		string.append("swing is wide and the stegosaurus doesn’t seem to care about anything other than its fight for its ");
 		string.append("life. The thagomizer’s spikes sink into the allosaurus’s side, and come out covered in blood.<br><br>");
@@ -4422,8 +4421,8 @@ public class MyGUI extends JPanel {
 		
 		//talk with macomb about survival; another false choice to keep things interesting
 		StringBuilder prime=new StringBuilder(600);
-		prime.append("<br><br>Muldrew sighs. “Hammett’s going to be pissed. Two species just went extinct again.”<br><br>");
-		prime.append("Macomb laughs, almost hysterically. “Hammett? An allosaurus just tried to eat you and you’re ");
+		prime.append("<br><br>Muldrew sighs. “Hammett’s going to be pissed. <a href=\"stego.html\">Two</a> species just went extinct again.”");
+		prime.append("<br><br>Macomb laughs, almost hysterically. “Hammett? An allosaurus just tried to eat you and you’re ");
 		prime.append("concerned about Hammett’s investment value going down?”<br> <br>");
 		prime.append("Alex giggles, glad that Macomb is back and completely safe. Muldrew looks at Macomb and ");
 		prime.append("smiles, saying “It’s good to see you again too, mate.” The two of them hug each other, and then ");
@@ -4587,8 +4586,8 @@ public class MyGUI extends JPanel {
 		story.addEdge(sprint, cry, 2);
 		
 		string.delete(0, string.length());
-		string.append("The dinosaur that’d been chasing you, an allosaurus, charges at the stegosaurus, and the ");
-		string.append("stegosaurus reacts in an instant. It turns to the side and lashes out with its thagomizer, its spiked ");
+		string.append("The dinosaur that’d been chasing you, an <a href=\"allo.html\">allosaurus</a>, charges at the stegosaurus, and ");
+		string.append("the stegosaurus reacts in an instant. It turns to the side and lashes out with its thagomizer, its spiked ");
 		string.append("tail, which moves almost in a blur. You’re glad you’ve taken cover behind the tower, because the ");
 		string.append("swing is wide and the stegosaurus doesn’t seem to care about anything other than its fight for its ");
 		string.append("life. The thagomizer’s spikes sink into the allosaurus’s side, and come out covered in blood. <br><br>");
@@ -4617,8 +4616,8 @@ public class MyGUI extends JPanel {
 		
 		//talk with muldrew about survival; another false choice to keep things interesting
 		StringBuilder prime=new StringBuilder(600);
-		prime.append("<br><br>Muldrew sighs. “Hammett’s going to be pissed. Two species just went extinct again.”<br><br>");
-		prime.append("Macomb laughs, almost hysterically. “Hammett? An allosaurus just tried to eat us and you’re ");
+		prime.append("<br><br>Muldrew sighs. “Hammett’s going to be pissed. <a href=\"stego.html\">Two</a> species just went extinct again.”");
+		prime.append("<br><br>Macomb laughs, almost hysterically. “Hammett? An allosaurus just tried to eat us and you’re ");
 		prime.append("concerned about Hammett’s investment value going down?” <br><br>");
 		prime.append("Alex giggles, glad that Macomb is back and completely safe. Muldrew looks at Macomb and ");
 		prime.append("smiles, saying “It’s good to see you again too, mate.” The two of them hug each other, and then ");
@@ -4772,8 +4771,8 @@ public class MyGUI extends JPanel {
 		story.addEdge(sprint, cry, 2);
 		
 		string.delete(0, string.length());
-		string.append("The dinosaur that’d been chasing you, an allosaurus, charges at the stegosaurus, and the ");
-		string.append("stegosaurus reacts in an instant. It turns to the side and lashes out with its thagomizer, its spiked ");
+		string.append("The dinosaur that’d been chasing you, an <a href=\"allo.html\">allosaurus</a>, charges at the stegosaurus, and ");
+		string.append("the stegosaurus reacts in an instant. It turns to the side and lashes out with its thagomizer, its spiked ");
 		string.append("tail, which moves almost in a blur. You’re glad you’ve taken cover behind the tower, because the ");
 		string.append("swing is wide and the stegosaurus doesn’t seem to care about anything other than its fight for its ");
 		string.append("life. The thagomizer’s spikes sink into the allosaurus’s side, and come out covered in blood.<br><br>");
@@ -4956,8 +4955,8 @@ public class MyGUI extends JPanel {
 		story.addEdge(sprint, cry, 2);
 		
 		string.delete(0, string.length());
-		string.append("The dinosaur that’d been chasing you, an allosaurus, charges at the stegosaurus, and the ");
-		string.append("stegosaurus reacts in an instant. It turns to the side and lashes out with its thagomizer, its spiked ");
+		string.append("The dinosaur that’d been chasing you, an <a href=\"allo.html\">allosaurus</a>, charges at the stegosaurus, and ");
+		string.append("the stegosaurus reacts in an instant. It turns to the side and lashes out with its thagomizer, its spiked ");
 		string.append("tail, which moves almost in a blur. You’re glad you’ve taken cover behind the tower, because the ");
 		string.append("swing is wide and the stegosaurus doesn’t seem to care about anything other than its fight for its ");
 		string.append("life. The thagomizer’s spikes sink into the allosaurus’s side, and come out covered in blood.<br>  <br>");
@@ -5143,8 +5142,8 @@ public class MyGUI extends JPanel {
 		story.addEdge(sprint, cry, 2);
 		
 		string.delete(0, string.length());
-		string.append("The dinosaur that’d been chasing you, an allosaurus, charges at the stegosaurus, and the ");
-		string.append("stegosaurus reacts in an instant. It turns to the side and lashes out with its thagomizer, its spiked ");
+		string.append("The dinosaur that’d been chasing you, an <a href=\"allo.html\">allosaurus</a>, charges at the stegosaurus, and ");
+		string.append("the stegosaurus reacts in an instant. It turns to the side and lashes out with its thagomizer, its spiked ");
 		string.append("tail, which moves almost in a blur. You’re glad you’ve taken cover behind the tower, because the ");
 		string.append("swing is wide and the stegosaurus doesn’t seem to care about anything other than its fight for its ");
 		string.append("life. The thagomizer’s spikes sink into the allosaurus’s side, and come out covered in blood.<br><br>");
