@@ -90,7 +90,7 @@ public class MyGUI extends JPanel {
 		//editorpane displays all the game's text
 		editor=new JEditorPane();
 		editor.setContentType("text/html");
-		editor.setFont(new Font("Monospaced", Font.PLAIN, 14));
+		editor.setFont(new Font("Segoe UI", Font.PLAIN, 14)); //RIP Monospaced
 		editor.setEditable(false); 
 		editor.setHighlighter(null);
 		editor.setCaret(null);
@@ -425,7 +425,7 @@ public class MyGUI extends JPanel {
 		StringBuilder string=new StringBuilder(600);
 		string.append("Jack Hammett, CEO of NextGen, is on a quest to bring the dinosaurs back.");
 		string.append("	Everyone said it was impossible, but he didn’t become the world’s first trillionaire by");
-		string.append("	listening to people with less money than him. Now, after 7 years, he claims to have succeeded in");
+		string.append("	listening to poor people. Now, after 7 years, he claims to have succeeded in");
 		string.append("	filling his private island with cloned dinosaurs, and plans to open it to the public as a theme park.");
 		string.append("	But first, he wants an expert’s opinion on the place, which is why he’s holding a private tour of it ");
 		string.append("and sent an invite to you, a…");
