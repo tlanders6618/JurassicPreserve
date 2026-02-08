@@ -91,7 +91,9 @@ public class MyGUI extends JPanel {
 		editor=new JEditorPane();
 		editor.setContentType("text/html");
 		editor.setFont(new Font("Monospaced", Font.PLAIN, 14));
-		editor.setEditable(false);
+		editor.setEditable(false); 
+		editor.setHighlighter(null);
+		editor.setCaret(null);
 		editor.setPreferredSize(getPreferredSize());
 		
 		//initialise the GUI's text with story's intro
